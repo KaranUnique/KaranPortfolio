@@ -83,7 +83,7 @@
   }
 
   .sidebar-card {
-    padding: 24px;
+    padding: 14px 14px 40px 14px; /* Increased bottom padding */
   }
 
   .profile-name {
@@ -99,8 +99,9 @@
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 15px;
+    gap: 15px;
+    padding-bottom: 140px; /* Increased space for bottom nav */
   }
 
   .sidebar {
@@ -110,7 +111,7 @@
 
   .sidebar-card {
     position: static; /* Remove sticky positioning on mobile */
-    padding: 20px;
+    padding: 20px 20px 60px 20px; /* Increased bottom padding */
     max-width: 100%;
   }
 
@@ -138,6 +139,7 @@
 
   .social-links {
     gap: 12px;
+    margin-top: 30px; /* Increased top margin */
   }
 
   .social-icon {
@@ -152,7 +154,7 @@
   }
 
   .sidebar-card {
-    padding: 16px;
+    padding: 16px 16px 50px 16px; /* Increased bottom padding */
     border-radius: 16px;
   }
 
