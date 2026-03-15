@@ -1,0 +1,80 @@
+.skill-cards-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.skill-card {
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  min-height: 280px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.orange-card {
+  background-color: var(--accent-orange);
+  color: #ffffff;
+}
+
+.green-card {
+  background-color: var(--accent-green);
+  color: var(--text-dark);
+}
+
+.card-top {
+  margin-bottom: auto;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.card-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Background graphics/decorations for cards can be added here with ::after */
+.orange-card::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .skill-cards-section {
+    grid-template-columns: 1fr;
+  }
+}

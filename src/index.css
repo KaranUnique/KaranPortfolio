@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-color: #000000;
+  --card-bg: #FFFFFF;
+  --text-primary: #FFFFFF;
+  --text-secondary: #808080;
+  --text-dark: #000000;
+  --accent-orange: #FF5C00;
+  --accent-green: #A3E635;
+  --accent-red: #FF0000;
+  
+  --font-main: 'Outfit', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Layout Container */
+.layout {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 40px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding-top: 80px; /* Ensures all routed sections clear the top nav notch */
+}
+
+/* Utilities for Stroke Text */
+.stroke-text {
+  color: transparent;
+  text-shadow: 
+    -1px -1px 0 var(--text-secondary),
+     0   -1px 0 var(--text-secondary),
+     1px -1px 0 var(--text-secondary),
+     1px  0   0 var(--text-secondary),
+     1px  1px 0 var(--text-secondary),
+     0    1px 0 var(--text-secondary),
+    -1px  1px 0 var(--text-secondary),
+    -1px  0   0 var(--text-secondary);
+}

@@ -1,0 +1,76 @@
+.floating-nav {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  pointer-events: none; /* Let clicks pass through empty space */
+  z-index: 100;
+}
+
+.floating-nav > * {
+  pointer-events: auto; /* Re-enable clicks on buttons */
+}
+
+.floating-left {
+  display: flex;
+}
+
+.floating-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.floating-nav button, .floating-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.floating-nav button:hover, .floating-nav a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.btn-video {
+  background-color: var(--accent-red);
+  color: white;
+}
+
+.btn-template {
+  background-color: var(--accent-orange);
+  color: white;
+}
+
+.btn-more {
+  background-color: var(--accent-green);
+  color: var(--text-dark);
+}
+
+.btn-madein {
+  background-color: white;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .floating-nav {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 16px;
+  }
+  .floating-right {
+    align-items: center;
+  }
+}

@@ -1,0 +1,120 @@
+.projects-section {
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Reduced gap between cards */
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px; /* Reduced space between image and text */
+  cursor: pointer;
+  position: relative;
+}
+
+.project-image-container {
+  width: 320px; /* Reduced from 450px */
+  height: 200px; /* Reduced from 300px */
+  flex-shrink: 0;
+  border-radius: 16px; /* Slightly smaller border radius */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  transition: transform 0.4s ease;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-image-container:hover {
+  transform: scale(1.02);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 24px; /* Reduced from 32px */
+  font-weight: 700; /* Reduced from 800 */
+  margin-bottom: 6px; /* Reduced margin */
+  color: #ffffff;
+}
+
+.project-desc {
+  font-size: 16px; /* Reduced from 20px */
+  color: var(--text-secondary);
+  line-height: 1.4; /* Added better line height */
+}
+
+.project-arrow-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent-orange);
+  cursor: pointer;
+  padding: 8px; /* Reduced padding */
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.project-arrow-btn svg {
+  width: 20px; /* Reduced from 24px */
+  height: 20px; /* Reduced from 24px */
+}
+
+.project-arrow-btn:hover {
+  transform: translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* Reduced gap on mobile */
+  }
+  .project-image-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  .project-title {
+    font-size: 20px; /* Smaller on mobile */
+  }
+  .project-desc {
+    font-size: 14px; /* Smaller on mobile */
+  }
+  .project-arrow-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px; /* Even smaller on mobile */
+  }
+  .project-arrow-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
