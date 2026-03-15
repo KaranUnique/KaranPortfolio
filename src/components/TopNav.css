@@ -9,7 +9,7 @@
   border-radius: 50px;
   gap: 24px;
   z-index: 50;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav-item {
@@ -20,7 +20,8 @@
   justify-content: center;
 }
 
-.nav-item:hover, .nav-item.active {
+.nav-item:hover,
+.nav-item.active {
   color: var(--text-primary);
 }
 
@@ -29,5 +30,93 @@
     position: relative;
     top: 0;
     margin: 0 auto 40px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 12px 24px;
+    border-radius: 24px;
+    gap: 20px;
+    z-index: 100;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: none;
+    justify-content: space-around;
+    min-width: 320px;
+    max-width: 90%;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-item {
+    padding: 12px;
+    min-width: 48px; /* Touch target size */
+    min-height: 48px; /* Touch target size */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .nav-item.active {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .nav-item svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-nav {
+    padding: 10px 20px;
+    gap: 16px;
+    min-width: 280px;
+    border-radius: 20px;
+  }
+
+  .nav-item {
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 10px;
+  }
+
+  .nav-item svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .top-nav {
+    padding: 8px 16px;
+    gap: 12px;
+    min-width: 240px;
+    border-radius: 18px;
+  }
+
+  .nav-item {
+    padding: 8px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 8px;
+  }
+
+  .nav-item svg {
+    width: 16px;
+    height: 16px;
   }
 }

@@ -76,5 +76,78 @@
 @media (max-width: 768px) {
   .skill-cards-section {
     grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .skill-card {
+    padding: 30px;
+    min-height: 220px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .card-btn {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-cards-section {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .skill-card {
+    padding: 24px;
+    min-height: 180px;
+    border-radius: 16px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .card-btn {
+    bottom: 24px;
+    right: 24px;
+  }
+
+  .card-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .skill-cards-section {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .skill-card {
+    padding: 20px;
+    min-height: 160px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .card-btn {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .card-btn svg {
+    width: 16px;
+    height: 16px;
   }
 }

@@ -35,7 +35,7 @@ const Sidebar = () => {
             href="https://www.linkedin.com/in/karan2005/"
             className="social-icon"
             aria-label="LinkedIn"
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -46,7 +46,7 @@ const Sidebar = () => {
             href="https://github.com/KaranUnique/"
             className="social-icon"
             aria-label="GitHub"
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -69,7 +69,13 @@ const Sidebar = () => {
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
             </svg>
           </a> */}
-          <a href="#" className="social-icon" aria-label="Resume" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1NotHZDRd9tbqkpc6JgoWZ9NVgqStUwzZ/view?usp=sharing"
+            className="social-icon"
+            aria-label="Resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               width="24"
               height="24"
