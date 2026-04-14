@@ -32,7 +32,7 @@ const Sidebar = () => {
 
         <div className="social-links">
           <a
-            href="https://www.linkedin.com/in/karan2005/"
+            href="https://www.linkedin.com/in/karanunix/"
             className="social-icon"
             aria-label="LinkedIn"
             target="_blank"
@@ -70,7 +70,7 @@ const Sidebar = () => {
             </svg>
           </a> */}
           <a
-            href="https://drive.google.com/file/d/1NotHZDRd9tbqkpc6JgoWZ9NVgqStUwzZ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ZtNMk4Cbe0CqsdGDIiTe3eduE6mJg_zn/view?usp=sharing"
             className="social-icon"
             aria-label="Resume"
             target="_blank"
