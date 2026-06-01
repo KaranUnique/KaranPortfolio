@@ -1,14 +1,14 @@
 import React from 'react';
 import './Projects.css';
-import interviewPilotImg from '../images/projects/InterviewPilot.png';
+import interviewPilotImg from '../images/projects/PrepPilot.png';
 import cryptoHubImg from '../images/projects/Cryptohub.png';
-import aiSatelliteImg from '../images/projects/AISatellite.png';
+import futureMeImg from '../images/projects/FutureMeAI.png';
 import codeMigrationImg from '../images/projects/CodeMigration.png';
 
 const projects = [
   {
     id: 1,
-    title: 'InterviewPilot',
+    title: 'PrepPilot',
     description: 'AI-Powered Interview Preparation Platform',
     color: 'linear-gradient(135deg, #1A1A1A 0%, #3a3a3a 100%)',
     image: interviewPilotImg,
@@ -24,11 +24,11 @@ const projects = [
   },
   {
     id: 3,
-    title: 'AI Satellite Analytics',
-    description: 'AI-Powered Satellite Imagery Analysis Platform',
+    title: 'FutureMe AI',
+    description: 'AI-Powered Future Analysis Platform',
     color: 'linear-gradient(135deg, #0f0f0f 0%, #1f1f1f 100%)',
-    image: aiSatelliteImg,
-    link: 'https://github.com/KaranUnique/Satellite-Image-Analyzer'
+    image: futureMeImg,
+    link: 'https://futureme-ai-1.onrender.com/'
   },
    {
     id: 4,

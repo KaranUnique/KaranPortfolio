@@ -11,7 +11,7 @@ const experiences = [
     id: 1,
     company: "Mphasis",
     role: "Associate Software Engineer Intern",
-    date: "Jan 2026 - Present",
+    date: "Jan 2026 - Apr 2026",
     logo: mphasisLogo,
     description:
       "• Developed and maintained enterprise-level applications using modern web technologies. Collaborated with cross-functional teams to deliver scalable software solutions.",
