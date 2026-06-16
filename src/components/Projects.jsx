@@ -2,8 +2,8 @@ import React from 'react';
 import './Projects.css';
 import interviewPilotImg from '../images/projects/PrepPilot.png';
 import cryptoHubImg from '../images/projects/Cryptohub.png';
-import futureMeImg from '../images/projects/FutureMeAI.png';
-import codeMigrationImg from '../images/projects/CodeMigration.png';
+import GitIssue from '../images/projects/GitIssue.png';
+import docQuery from '../images/projects/DocQuery.png';
 
 const projects = [
   {
@@ -14,30 +14,31 @@ const projects = [
     image: interviewPilotImg,
     link: 'https://interview-preparation-ai-zu05.onrender.com/'
   },
+  
   {
     id: 2,
+    title: 'Git IssueLens',
+    description: 'Automates GitHub issue review with AI-driven analysis and recommendations.',
+    color: 'linear-gradient(135deg, #0f0f0f 0%, #1f1f1f 100%)',
+    image: GitIssue,
+    link: 'https://futureme-ai-1.onrender.com/'
+  },
+   {
+    id: 3,
+    title: 'DocQuery AI',
+    description: 'RAG-powered document intelligence platform for semantic search, chat, and summarization.',
+    color: 'linear-gradient(135deg, #0f0f0f 0%, #1f1f1f 100%)',
+    image: docQuery,
+    link: 'https://hub.docker.com/r/karanunix/code-migration-cli'
+  },
+  {
+    id: 4,
     title: 'CryptoHub',
     description: 'Real-Time Cryptocurrency Analytics Dashboard',
     color: 'linear-gradient(135deg, #1A1A1A 0%, #2a2a2a 100%)',
     image: cryptoHubImg,
     link: 'https://crypto-hub-rosy.vercel.app/'
   },
-  {
-    id: 3,
-    title: 'FutureMe AI',
-    description: 'AI-Powered Future Analysis Platform',
-    color: 'linear-gradient(135deg, #0f0f0f 0%, #1f1f1f 100%)',
-    image: futureMeImg,
-    link: 'https://futureme-ai-1.onrender.com/'
-  },
-   {
-    id: 4,
-    title: 'Code Migration CLI Tool',
-    description: 'AI-Powered Satellite Imagery Analysis Platform',
-    color: 'linear-gradient(135deg, #0f0f0f 0%, #1f1f1f 100%)',
-    image: codeMigrationImg,
-    link: 'https://hub.docker.com/r/karanunix/code-migration-cli'
-  }
 ];
 
 const Projects = () => {
