@@ -29,7 +29,7 @@ const projects = [
     description: 'RAG-powered document intelligence platform for semantic search, chat, and summarization.',
     color: 'linear-gradient(135deg, #0f0f0f 0%, #1f1f1f 100%)',
     image: docQuery,
-    link: 'https://hub.docker.com/r/karanunix/code-migration-cli'
+    link: 'https://docquery-40hy.onrender.com'
   },
   {
     id: 4,
