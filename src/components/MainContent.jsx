@@ -22,7 +22,7 @@ const MainContent = () => {
               <Projects />
               <Experience />
               <Tools />
-              <Blog />
+              {/* <Blog /> */}
               <Contact />
             </>
           }
